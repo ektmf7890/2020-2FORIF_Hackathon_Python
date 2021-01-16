@@ -173,7 +173,7 @@ def display_choices():
 
 indices = pd.Series(data.index, index=data['names'])
 def recommend():
-    print('\n\n✈✈✈✈✈✈ 여행지추천해듀오 ✈✈✈✈✈✈\n 다음 여행지 중 즐겁게 다녀왔던 적이 있는 여행지가 있다면 선택해주세요😁')
+    print('\n\n✈✈✈✈✈✈ 여행지추천해듀오 ✈✈✈✈✈✈\n 다음 여행지 중 즐겁게 다녀온 적 있거나 가보고 싶은 여행지가 있다면 선택해주세요😁')
 
     while len(chosen_sites) < 5:
         print(f'\n{5-len(chosen_sites)}개 이상을 더 선택하셔야해요😉!\n')
