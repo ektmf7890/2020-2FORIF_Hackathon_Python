@@ -15,7 +15,6 @@ search_list = []
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.implicitly_wait(25)
 
-search_list = []
 
 #main
 for i in range(6, 12):
@@ -77,4 +76,16 @@ for i in range(6, 12):
         
         # 메인 탭으로 변경
         driver.switch_to.window(driver.window_handles[0])
+     
+    
+    #CSV
+    def toCSV(search_list):
+        file = open('extra~.csv', 'w', encoding='utf-8', newline='')
+        csvfile = csv.writer(file)
+        for row in search_list:
+            csvfile.writerow(row)
+        file.close()
+        
+        
+    toCSV(search_list)
         
