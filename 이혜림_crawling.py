@@ -10,6 +10,7 @@ import math
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.implicitly_wait(25)
 
+search_list = []
 
 #main
 for i in range(6, 12):
