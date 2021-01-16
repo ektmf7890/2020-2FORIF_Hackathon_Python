@@ -6,6 +6,11 @@ import re
 import csv
 import math
 
+#var
+review = [5, 4.5, 4, 3.5, 3]
+search_list = []
+
+
 #셀레니움 두둥
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.implicitly_wait(25)
