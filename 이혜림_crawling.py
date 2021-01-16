@@ -6,12 +6,12 @@ import re
 import csv
 import math
 
-//셀레니움 두둥
+#셀레니움 두둥
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.implicitly_wait(25)
 
 
-//main
+#main
 for i in range(6, 12):
     url = "https://www.tripadvisor.co.kr/Attractions-g294196-Activities-oa" + str(i*30) + "-South_Korea.html"
     driver.get(url)
