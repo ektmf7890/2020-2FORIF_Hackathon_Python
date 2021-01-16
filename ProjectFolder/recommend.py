@@ -178,10 +178,11 @@ def recommend():
     while len(chosen_sites) < 5:
         print(f'\n{5-len(chosen_sites)}개 이상을 더 선택하셔야해요😉!\n')
         choices = display_choices()
-        input_list = list(map(int, input("좋았던 여행지(입력: 1 3 5, 없으면 Enter!) : ").split()))
+        input_list = list(map(int, input("좋았던 여행지(입력: 1 3 5, 없으면 0) : ").split()))
         
         for idx in input_list:
-            chosen_sites.append(choices[idx-1])
+            if idx != 0:
+                chosen_sites.append(choices[idx-1])
         
     print("\n\n🎇여행지 추천이 완료되었습니다!🎇\n")
     for site in chosen_sites:
